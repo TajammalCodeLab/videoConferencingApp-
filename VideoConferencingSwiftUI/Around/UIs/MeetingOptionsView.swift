@@ -36,51 +36,13 @@ struct MeetingOptionsView: View {
                     .background(.ultraThinMaterial)
                     .cornerRadius(20)
                 }
-                
-                VStack(alignment: .leading) {
-                    HStack {
-                        Image(systemName: "plus")
-                            .font(.title2)
-                        Spacer()
-                    }
-                    
-                    Spacer()
-                    
-                    Text("Create New room")
-                }
-                .padding()
-                .frame(width: 160, height: 160)
-                .background(.ultraThinMaterial)
-                .cornerRadius(20)
             }
-            .navigationTitle("")
+            
             .toolbar {
-                ToolbarItem(placement: .topBarTrailing){
-                    Image("amos")
-                        .resizable()
-                        .scaledToFit()
-                        .frame(width: 32, height: 32)
-                        .clipShape(Circle())
-                }
                 
-                ToolbarItem(placement: .topBarLeading){
-                    NavigationLink {
-                        PreJoinScreen()
-                    } label: {
-                        Text("Start Meeting")
-                    }
-                    .buttonStyle(.bordered)
+                ToolbarItem(placement: .topBarLeading) {
+                    Text("New Meeting")
                 }
-                
-                ToolbarItem(placement: .principal){
-                    Button {
-                        
-                    } label: {
-                        Text("Schedule")
-                    }
-                    .buttonStyle(.bordered)
-                }
-                
                 ToolbarItem(placement: .topBarTrailing) {
                     Image(.sonoma)
                         .resizable()

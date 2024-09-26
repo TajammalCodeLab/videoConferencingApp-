@@ -19,8 +19,6 @@
 		4B8DDBA72AB4B0F000714F5A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B8DDBA62AB4B0F000714F5A /* Preview Assets.xcassets */; };
 		4B9348192AB877F4004FAF33 /* PreJoinScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9348182AB877F4004FAF33 /* PreJoinScreen.swift */; };
 		4B93481D2AB8786D004FAF33 /* MeetingOptionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B93481C2AB8786D004FAF33 /* MeetingOptionsView.swift */; };
-		4BBAD1F92ABD813800AC97CC /* ReactionsWithPhaseAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BBAD1F82ABD813800AC97CC /* ReactionsWithPhaseAnimator.swift */; };
-		4BBAD1FB2ABD8BF300AC97CC /* RevolvingHeartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BBAD1FA2ABD8BF300AC97CC /* RevolvingHeartView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,8 +34,6 @@
 		4B9329442AC4005900B60AB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		4B9348182AB877F4004FAF33 /* PreJoinScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreJoinScreen.swift; sourceTree = "<group>"; };
 		4B93481C2AB8786D004FAF33 /* MeetingOptionsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeetingOptionsView.swift; sourceTree = "<group>"; };
-		4BBAD1F82ABD813800AC97CC /* ReactionsWithPhaseAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReactionsWithPhaseAnimator.swift; sourceTree = "<group>"; };
-		4BBAD1FA2ABD8BF300AC97CC /* RevolvingHeartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RevolvingHeartView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +52,6 @@
 		4B146E6F2AB876C500E6AB45 /* Around */ = {
 			isa = PBXGroup;
 			children = (
-				4BBAD1F72ABD812100AC97CC /* Animations */,
 				4B545D482AB87F5C0062663D /* LiveCameraFeed */,
 				4B545D532AB8AB740062663D /* Setup */,
 				4B545D552AB8AC090062663D /* UIs */,
@@ -126,15 +121,6 @@
 				4B8DDBA62AB4B0F000714F5A /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		4BBAD1F72ABD812100AC97CC /* Animations */ = {
-			isa = PBXGroup;
-			children = (
-				4BBAD1FA2ABD8BF300AC97CC /* RevolvingHeartView.swift */,
-				4BBAD1F82ABD813800AC97CC /* ReactionsWithPhaseAnimator.swift */,
-			);
-			path = Animations;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -218,8 +204,6 @@
 				4B545D5F2AB9BFE50062663D /* AroundMeetingTopView.swift in Sources */,
 				4B8DDBA02AB4B0EC00714F5A /* VideoConferencingSwiftUIApp.swift in Sources */,
 				4B545D5B2AB9BFC50062663D /* CustomUIFactory.swift in Sources */,
-				4BBAD1FB2ABD8BF300AC97CC /* RevolvingHeartView.swift in Sources */,
-				4BBAD1F92ABD813800AC97CC /* ReactionsWithPhaseAnimator.swift in Sources */,
 				4B93481D2AB8786D004FAF33 /* MeetingOptionsView.swift in Sources */,
 				4B9348192AB877F4004FAF33 /* PreJoinScreen.swift in Sources */,
 				4B545D5D2AB9BFDB0062663D /* AroundMeetingControlsView.swift in Sources */,

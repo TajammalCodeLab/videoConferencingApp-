@@ -76,38 +76,6 @@ struct AroundMeetingControlsView: View {
             .frame(width: 42)
             
             Button {
-                // Implement recording later
-                
-                isRecording.toggle()
-            } label: {
-                VStack(spacing: 12) {
-                    if !isRecording {
-                        Image(systemName: "record.circle")
-                            .frame(height: 48)
-                        
-                        withAnimation {
-                            Text(isRecording ? "stop" : "Record")
-                                .font(.caption)
-                                .contentTransition(.interpolate)
-                        }
-                        
-                    } else {
-                        Image(systemName: "record.circle")
-                            .foregroundStyle(.red)
-                            .frame(height: 48)
-                        
-                        withAnimation {
-                            Text(isRecording ? "Stop" : "Record")
-                                .font(.caption)
-                                .contentTransition(.interpolate)
-                        }
-                    }
-                }
-            }
-            .buttonStyle(.plain)
-            .frame(width: 42)
-            
-            Button {
                 isScreenSharing ? viewModel.stopScreensharing() : viewModel.startScreensharing(type: .inApp)
                 isScreenSharing.toggle()
             } label: {
@@ -126,19 +94,6 @@ struct AroundMeetingControlsView: View {
             }
             .buttonStyle(.plain)
             .frame(width: 42)
-            
-            Button {
-              
-            } label: {
-                VStack(spacing: 12) {
-                    Image(systemName: "face.dashed.fill")
-                        .frame(height: 48)
-                    Text("Reactions")
-                        .font(.caption)
-                }
-            }
-            .buttonStyle(.plain)
-            .frame(width: 64)
         }
         .frame(maxWidth: .infinity)
         .frame(height: 74)
