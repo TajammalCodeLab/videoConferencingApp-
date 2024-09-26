@@ -15,17 +15,6 @@ struct AroundMeetingTopView: View {
     
     var body: some View {
         HStack {
-            Button {
-                
-            } label: {
-                Image(systemName: "chevron.")
-            }
-            .font(.title2)
-            .bold()
-            
-            Text("All Hands")
-            
-            Spacer()
             
             HStack {
                 Image(systemName: "person.3")

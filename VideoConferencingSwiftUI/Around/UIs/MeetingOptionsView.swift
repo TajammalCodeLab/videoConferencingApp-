@@ -14,27 +14,20 @@ struct MeetingOptionsView: View {
     
     var body: some View {
         NavigationView {
-            HStack {
+            VStack {
                 NavigationLink {
                     PreJoinScreen()
                 } label: {
-                    VStack(alignment: .leading) {
-                        HStack {
-                            Image(systemName: "person.circle.fill")
-                                .font(.title2)
-                            Spacer()
-                            Image(systemName: "ellipsis")
-                                .rotationEffect(.degrees(90))
-                        }
-                        
-                        Spacer()
+                    HStack {
+                        Image(systemName: "person.circle.fill")
+                            .font(.title2)
                         
                         Text("New Meeting")
                     }
                     .padding()
-                    .frame(width: 160, height: 160)
+                    .frame(width: 180, height: 80)
                     .background(.ultraThinMaterial)
-                    .cornerRadius(20)
+                    .cornerRadius(10)
                 }
             }
             

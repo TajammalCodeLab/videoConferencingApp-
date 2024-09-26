@@ -21,8 +21,8 @@ struct CallContainerSetup: View {
     init() {
         let user = User(
             id: userId,
-            name: "CallContainerSetup", // name and imageURL are used in the UI
-            imageURL: .init(string: "https://getstream.io/static/2796a305dd07651fcceb4721a94f4505/a3911/martin-mitrevski.webp")
+            name: "From Xcode", // name and imageURL are used in the UI
+            imageURL: .init(string: "https://pbs.twimg.com/profile_images/1305957506821189632/jkfoDUVz_400x400.jpg")
         )
         
         // Initialize Stream Video client

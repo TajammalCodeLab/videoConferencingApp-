@@ -14,8 +14,11 @@ struct AroundMeetingControlsView: View {
     @State private var isAudio = true
     @State private var isFront = true
     
+    
     var body: some View {
+        
         HStack(alignment: .bottom, spacing: 20) {
+            
             Button {
                 viewModel.toggleCameraEnabled()
                 isVideo.toggle()

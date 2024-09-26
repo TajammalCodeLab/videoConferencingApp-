@@ -73,14 +73,6 @@ struct PreJoinScreen: View {
             }
             .fullScreenCover(isPresented: $isJoined, content: CallContainerSetup.init)
             
-            Spacer()
-            
-            HStack {
-                Image(systemName: "circle")
-                Text("Skip this step for future meetings")
-            }
-            
-            Spacer()
         }
     }
 }
