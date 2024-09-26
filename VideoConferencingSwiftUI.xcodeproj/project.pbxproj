@@ -22,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1FF672602CA5C6C500D76B1E /* VideoConferencingSwiftUIDebug.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = VideoConferencingSwiftUIDebug.entitlements; sourceTree = "<group>"; };
 		4B545D492AB880140062663D /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4B545D512AB8A6F80062663D /* CallContainerSetup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallContainerSetup.swift; sourceTree = "<group>"; };
 		4B545D5A2AB9BFC50062663D /* CustomUIFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomUIFactory.swift; sourceTree = "<group>"; };
@@ -106,6 +107,7 @@
 		4B8DDB9E2AB4B0EC00714F5A /* VideoConferencingSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				1FF672602CA5C6C500D76B1E /* VideoConferencingSwiftUIDebug.entitlements */,
 				4B9329442AC4005900B60AB7 /* Info.plist */,
 				4B8DDB9F2AB4B0EC00714F5A /* VideoConferencingSwiftUIApp.swift */,
 				4B146E6F2AB876C500E6AB45 /* Around */,
@@ -338,6 +340,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = VideoConferencingSwiftUI/VideoConferencingSwiftUIDebug.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"VideoConferencingSwiftUI/Preview Content\"";
@@ -357,7 +360,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.amosgyamfi.VideoConferencingSwiftUI;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tjmax.VideoConferencingSwiftUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
