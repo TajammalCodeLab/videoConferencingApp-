@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		1FF672912CA5D43800D76B1E /* ReplayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FF672902CA5D43800D76B1E /* ReplayKit.framework */; };
 		1FF672982CA5D43800D76B1E /* BroadcastScreenSharingHandler.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 1FF6728E2CA5D43800D76B1E /* BroadcastScreenSharingHandler.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		1FF672A02CA5D96D00D76B1E /* StreamVideo in Frameworks */ = {isa = PBXBuildFile; productRef = 1FF6729F2CA5D96D00D76B1E /* StreamVideo */; };
+		1FF672A22CA5D96D00D76B1E /* StreamVideoSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 1FF672A12CA5D96D00D76B1E /* StreamVideoSwiftUI */; };
 		4B146E6A2AB873A900E6AB45 /* StreamVideo in Frameworks */ = {isa = PBXBuildFile; productRef = 4B146E692AB873A900E6AB45 /* StreamVideo */; };
 		4B146E6C2AB873A900E6AB45 /* StreamVideoSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 4B146E6B2AB873A900E6AB45 /* StreamVideoSwiftUI */; };
 		4B545D4A2AB880140062663D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B545D492AB880140062663D /* ViewController.swift */; };
@@ -84,6 +86,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FF672A22CA5D96D00D76B1E /* StreamVideoSwiftUI in Frameworks */,
+				1FF672A02CA5D96D00D76B1E /* StreamVideo in Frameworks */,
 				1FF672912CA5D43800D76B1E /* ReplayKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -206,6 +210,8 @@
 			);
 			name = BroadcastScreenSharingHandler;
 			packageProductDependencies = (
+				1FF6729F2CA5D96D00D76B1E /* StreamVideo */,
+				1FF672A12CA5D96D00D76B1E /* StreamVideoSwiftUI */,
 			);
 			productName = BroadcastScreenSharingHandler;
 			productReference = 1FF6728E2CA5D43800D76B1E /* BroadcastScreenSharingHandler.appex */;
@@ -608,6 +614,14 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		1FF6729F2CA5D96D00D76B1E /* StreamVideo */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = StreamVideo;
+		};
+		1FF672A12CA5D96D00D76B1E /* StreamVideoSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = StreamVideoSwiftUI;
+		};
 		4B146E692AB873A900E6AB45 /* StreamVideo */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 4B146E682AB873A900E6AB45 /* XCRemoteSwiftPackageReference "stream-video-swift" */;

@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>BroadcastAppGroupIdentifier</key>
-	<string>com.tjmax.VideoConferencingSwiftUI</string>
+	<string>group.com.tjmax.VideoConferencingSwiftUI</string>
 	<key>NSExtension</key>
 	<dict>
 		<key>NSExtensionPointIdentifier</key>

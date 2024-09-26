@@ -6,13 +6,17 @@ import StreamVideo
 import StreamVideoSwiftUI
 
 struct AroundMeetingControlsView: View {
-
+    
     @ObservedObject var viewModel: CallViewModel
     @State private var isScreenSharing = false
     @State private var isRecording = false
     @State private var isVideo = true
     @State private var isAudio = true
     @State private var isFront = true
+    @StateObject private var broadcastObserver = BroadcastObserver()
+    @State private var selection = "1"
+    let colors = ["1", "2"]
+    
     
     
     var body: some View {
@@ -43,7 +47,7 @@ struct AroundMeetingControlsView: View {
                 isAudio.toggle()
             } label: {
                 VStack(spacing: 12) {
-                    //Image(systemName: isAudio ? "mic.fill" : "mic.slash.fill")
+                    
                     Image(systemName: isAudio ? "mic.fill" : "mic.slash.fill")
                         .contentTransition(.symbolEffect(.replace))
                         .frame(height: 48)
@@ -77,26 +81,45 @@ struct AroundMeetingControlsView: View {
             }
             .buttonStyle(.plain)
             .frame(width: 42)
-            
-            Button {
-                isScreenSharing ? viewModel.stopScreensharing() : viewModel.startScreensharing(type: .broadcast)
-                isScreenSharing.toggle()
-            } label: {
-                VStack(spacing: 12) {
-                    Image(systemName: isScreenSharing ? "shared.with.you.slash": "shared.with.you")
-                    .foregroundStyle(isScreenSharing ? .red : .white)
-                        .contentTransition(.symbolEffect(.replace))
-                        .frame(height: 48)
+
+            BroadcastPickerView(preferredExtension: "com.tjmax.VideoConferencingSwiftUI.BroadcastScreenSharingHandler")
+                .onChange(of: broadcastObserver.broadcastState) {
                     
-                    withAnimation {
-                        Text(isScreenSharing ? "Stop" : "Share")
-                            .font(.caption)
-                            .contentTransition(.interpolate)
+
+                    if broadcastObserver.broadcastState == .started {
+                        
+                        viewModel.startScreensharing(type: .broadcast)
+                    } else if broadcastObserver.broadcastState == .finished {
+                        viewModel.stopScreensharing()
                     }
                 }
-            }
-            .buttonStyle(.plain)
-            .frame(width: 42)
+                .onAppear {
+                    broadcastObserver.observe()
+                }
+                .frame(width: 42)
+                
+
+            
+//            Button {
+//                isScreenSharing ? viewModel.stopScreensharing() : viewModel.startScreensharing(type: .inApp)
+//                isScreenSharing.toggle()
+//            } label: {
+//                VStack(spacing: 12) {
+//                    Image(systemName: isScreenSharing ? "shared.with.you.slash": "shared.with.you")
+//                        .foregroundStyle(isScreenSharing ? .red : .white)
+//                        .contentTransition(.symbolEffect(.replace))
+//                        .frame(height: 48)
+//                    
+//                    withAnimation {
+//                        Text(isScreenSharing ? "Stop" : "Share")
+//                            .font(.caption)
+//                            .contentTransition(.interpolate)
+//                    }
+//                }
+//            }
+//            .buttonStyle(.plain)
+//            .frame(width: 42)
+            
         }
         .frame(maxWidth: .infinity)
         .frame(height: 74)
