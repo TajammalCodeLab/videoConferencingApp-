@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1FF672912CA5D43800D76B1E /* ReplayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FF672902CA5D43800D76B1E /* ReplayKit.framework */; };
+		1FF672982CA5D43800D76B1E /* BroadcastScreenSharingHandler.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 1FF6728E2CA5D43800D76B1E /* BroadcastScreenSharingHandler.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		4B146E6A2AB873A900E6AB45 /* StreamVideo in Frameworks */ = {isa = PBXBuildFile; productRef = 4B146E692AB873A900E6AB45 /* StreamVideo */; };
 		4B146E6C2AB873A900E6AB45 /* StreamVideoSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 4B146E6B2AB873A900E6AB45 /* StreamVideoSwiftUI */; };
 		4B545D4A2AB880140062663D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B545D492AB880140062663D /* ViewController.swift */; };
@@ -21,8 +23,34 @@
 		4B93481D2AB8786D004FAF33 /* MeetingOptionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B93481C2AB8786D004FAF33 /* MeetingOptionsView.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		1FF672962CA5D43800D76B1E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4B8DDB942AB4B0EC00714F5A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1FF6728D2CA5D43800D76B1E;
+			remoteInfo = BroadcastScreenSharingHandler;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1FF672992CA5D43800D76B1E /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				1FF672982CA5D43800D76B1E /* BroadcastScreenSharingHandler.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		1FF672602CA5C6C500D76B1E /* VideoConferencingSwiftUIDebug.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = VideoConferencingSwiftUIDebug.entitlements; sourceTree = "<group>"; };
+		1FF6728E2CA5D43800D76B1E /* BroadcastScreenSharingHandler.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = BroadcastScreenSharingHandler.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FF672902CA5D43800D76B1E /* ReplayKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReplayKit.framework; path = System/Library/Frameworks/ReplayKit.framework; sourceTree = SDKROOT; };
 		4B545D492AB880140062663D /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4B545D512AB8A6F80062663D /* CallContainerSetup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallContainerSetup.swift; sourceTree = "<group>"; };
 		4B545D5A2AB9BFC50062663D /* CustomUIFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomUIFactory.swift; sourceTree = "<group>"; };
@@ -37,7 +65,29 @@
 		4B93481C2AB8786D004FAF33 /* MeetingOptionsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeetingOptionsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		1FF6729C2CA5D43800D76B1E /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 1FF6728D2CA5D43800D76B1E /* BroadcastScreenSharingHandler */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		1FF672922CA5D43800D76B1E /* BroadcastScreenSharingHandler */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (1FF6729C2CA5D43800D76B1E /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = BroadcastScreenSharingHandler; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
+
 /* Begin PBXFrameworksBuildPhase section */
+		1FF6728B2CA5D43800D76B1E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FF672912CA5D43800D76B1E /* ReplayKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4B8DDB992AB4B0EC00714F5A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -50,6 +100,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1FF6728F2CA5D43800D76B1E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1FF672902CA5D43800D76B1E /* ReplayKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		4B146E6F2AB876C500E6AB45 /* Around */ = {
 			isa = PBXGroup;
 			children = (
@@ -92,6 +150,8 @@
 			isa = PBXGroup;
 			children = (
 				4B8DDB9E2AB4B0EC00714F5A /* VideoConferencingSwiftUI */,
+				1FF672922CA5D43800D76B1E /* BroadcastScreenSharingHandler */,
+				1FF6728F2CA5D43800D76B1E /* Frameworks */,
 				4B8DDB9D2AB4B0EC00714F5A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -100,6 +160,7 @@
 			isa = PBXGroup;
 			children = (
 				4B8DDB9C2AB4B0EC00714F5A /* VideoConferencingSwiftUI.app */,
+				1FF6728E2CA5D43800D76B1E /* BroadcastScreenSharingHandler.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -128,6 +189,28 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		1FF6728D2CA5D43800D76B1E /* BroadcastScreenSharingHandler */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1FF6729D2CA5D43800D76B1E /* Build configuration list for PBXNativeTarget "BroadcastScreenSharingHandler" */;
+			buildPhases = (
+				1FF6728A2CA5D43800D76B1E /* Sources */,
+				1FF6728B2CA5D43800D76B1E /* Frameworks */,
+				1FF6728C2CA5D43800D76B1E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				1FF672922CA5D43800D76B1E /* BroadcastScreenSharingHandler */,
+			);
+			name = BroadcastScreenSharingHandler;
+			packageProductDependencies = (
+			);
+			productName = BroadcastScreenSharingHandler;
+			productReference = 1FF6728E2CA5D43800D76B1E /* BroadcastScreenSharingHandler.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		4B8DDB9B2AB4B0EC00714F5A /* VideoConferencingSwiftUI */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4B8DDBAA2AB4B0F000714F5A /* Build configuration list for PBXNativeTarget "VideoConferencingSwiftUI" */;
@@ -135,10 +218,12 @@
 				4B8DDB982AB4B0EC00714F5A /* Sources */,
 				4B8DDB992AB4B0EC00714F5A /* Frameworks */,
 				4B8DDB9A2AB4B0EC00714F5A /* Resources */,
+				1FF672992CA5D43800D76B1E /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				1FF672972CA5D43800D76B1E /* PBXTargetDependency */,
 			);
 			name = VideoConferencingSwiftUI;
 			packageProductDependencies = (
@@ -156,9 +241,12 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1500;
+				LastSwiftUpdateCheck = 1600;
 				LastUpgradeCheck = 1500;
 				TargetAttributes = {
+					1FF6728D2CA5D43800D76B1E = {
+						CreatedOnToolsVersion = 16.0;
+					};
 					4B8DDB9B2AB4B0EC00714F5A = {
 						CreatedOnToolsVersion = 15.0;
 					};
@@ -181,11 +269,19 @@
 			projectRoot = "";
 			targets = (
 				4B8DDB9B2AB4B0EC00714F5A /* VideoConferencingSwiftUI */,
+				1FF6728D2CA5D43800D76B1E /* BroadcastScreenSharingHandler */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		1FF6728C2CA5D43800D76B1E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4B8DDB9A2AB4B0EC00714F5A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -198,6 +294,13 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		1FF6728A2CA5D43800D76B1E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4B8DDB982AB4B0EC00714F5A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -215,7 +318,67 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		1FF672972CA5D43800D76B1E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1FF6728D2CA5D43800D76B1E /* BroadcastScreenSharingHandler */;
+			targetProxy = 1FF672962CA5D43800D76B1E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		1FF6729A2CA5D43800D76B1E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 33K7URGK8L;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BroadcastScreenSharingHandler/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = BroadcastScreenSharingHandler;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.amosgyamfi.VideoConferencingSwiftUI.BroadcastScreenSharingHandler;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1FF6729B2CA5D43800D76B1E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 33K7URGK8L;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BroadcastScreenSharingHandler/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = BroadcastScreenSharingHandler;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.amosgyamfi.VideoConferencingSwiftUI.BroadcastScreenSharingHandler;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		4B8DDBA82AB4B0F000714F5A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -403,6 +566,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		1FF6729D2CA5D43800D76B1E /* Build configuration list for PBXNativeTarget "BroadcastScreenSharingHandler" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1FF6729A2CA5D43800D76B1E /* Debug */,
+				1FF6729B2CA5D43800D76B1E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4B8DDB972AB4B0EC00714F5A /* Build configuration list for PBXProject "VideoConferencingSwiftUI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
