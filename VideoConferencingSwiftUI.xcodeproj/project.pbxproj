@@ -10,7 +10,6 @@
 		4B146E6A2AB873A900E6AB45 /* StreamVideo in Frameworks */ = {isa = PBXBuildFile; productRef = 4B146E692AB873A900E6AB45 /* StreamVideo */; };
 		4B146E6C2AB873A900E6AB45 /* StreamVideoSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 4B146E6B2AB873A900E6AB45 /* StreamVideoSwiftUI */; };
 		4B545D4A2AB880140062663D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B545D492AB880140062663D /* ViewController.swift */; };
-		4B545D4C2AB892170062663D /* VideoRendererSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B545D4B2AB892170062663D /* VideoRendererSetup.swift */; };
 		4B545D522AB8A6F80062663D /* CallContainerSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B545D512AB8A6F80062663D /* CallContainerSetup.swift */; };
 		4B545D5B2AB9BFC50062663D /* CustomUIFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B545D5A2AB9BFC50062663D /* CustomUIFactory.swift */; };
 		4B545D5D2AB9BFDB0062663D /* AroundMeetingControlsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B545D5C2AB9BFDB0062663D /* AroundMeetingControlsView.swift */; };
@@ -27,7 +26,6 @@
 
 /* Begin PBXFileReference section */
 		4B545D492AB880140062663D /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		4B545D4B2AB892170062663D /* VideoRendererSetup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoRendererSetup.swift; sourceTree = "<group>"; };
 		4B545D512AB8A6F80062663D /* CallContainerSetup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallContainerSetup.swift; sourceTree = "<group>"; };
 		4B545D5A2AB9BFC50062663D /* CustomUIFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomUIFactory.swift; sourceTree = "<group>"; };
 		4B545D5C2AB9BFDB0062663D /* AroundMeetingControlsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AroundMeetingControlsView.swift; sourceTree = "<group>"; };
@@ -80,7 +78,6 @@
 			isa = PBXGroup;
 			children = (
 				4BF98B262ABDC4C7001C44D1 /* VideoClientSetUp.swift */,
-				4B545D4B2AB892170062663D /* VideoRendererSetup.swift */,
 				4B545D512AB8A6F80062663D /* CallContainerSetup.swift */,
 			);
 			path = Setup;
@@ -225,7 +222,6 @@
 				4BF98B272ABDC4C7001C44D1 /* VideoClientSetUp.swift in Sources */,
 				4B8DDBA02AB4B0EC00714F5A /* VideoConferencingSwiftUIApp.swift in Sources */,
 				4B545D5B2AB9BFC50062663D /* CustomUIFactory.swift in Sources */,
-				4B545D4C2AB892170062663D /* VideoRendererSetup.swift in Sources */,
 				4BBAD1FB2ABD8BF300AC97CC /* RevolvingHeartView.swift in Sources */,
 				4BBAD1F92ABD813800AC97CC /* ReactionsWithPhaseAnimator.swift in Sources */,
 				4B93481D2AB8786D004FAF33 /* MeetingOptionsView.swift in Sources */,
