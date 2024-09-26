@@ -24,7 +24,6 @@ struct AroundMeetingTopView: View {
             Spacer()
             
             Button {
-                //HangUpIconView(viewModel: viewModel)
                 viewModel.hangUp()
             } label: {
                 Text("Leave")
