@@ -21,7 +21,6 @@
 		4B93481D2AB8786D004FAF33 /* MeetingOptionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B93481C2AB8786D004FAF33 /* MeetingOptionsView.swift */; };
 		4BBAD1F92ABD813800AC97CC /* ReactionsWithPhaseAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BBAD1F82ABD813800AC97CC /* ReactionsWithPhaseAnimator.swift */; };
 		4BBAD1FB2ABD8BF300AC97CC /* RevolvingHeartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BBAD1FA2ABD8BF300AC97CC /* RevolvingHeartView.swift */; };
-		4BF98B272ABDC4C7001C44D1 /* VideoClientSetUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF98B262ABDC4C7001C44D1 /* VideoClientSetUp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,7 +38,6 @@
 		4B93481C2AB8786D004FAF33 /* MeetingOptionsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeetingOptionsView.swift; sourceTree = "<group>"; };
 		4BBAD1F82ABD813800AC97CC /* ReactionsWithPhaseAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReactionsWithPhaseAnimator.swift; sourceTree = "<group>"; };
 		4BBAD1FA2ABD8BF300AC97CC /* RevolvingHeartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RevolvingHeartView.swift; sourceTree = "<group>"; };
-		4BF98B262ABDC4C7001C44D1 /* VideoClientSetUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoClientSetUp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,7 +75,6 @@
 		4B545D532AB8AB740062663D /* Setup */ = {
 			isa = PBXGroup;
 			children = (
-				4BF98B262ABDC4C7001C44D1 /* VideoClientSetUp.swift */,
 				4B545D512AB8A6F80062663D /* CallContainerSetup.swift */,
 			);
 			path = Setup;
@@ -219,7 +216,6 @@
 			files = (
 				4B545D4A2AB880140062663D /* ViewController.swift in Sources */,
 				4B545D5F2AB9BFE50062663D /* AroundMeetingTopView.swift in Sources */,
-				4BF98B272ABDC4C7001C44D1 /* VideoClientSetUp.swift in Sources */,
 				4B8DDBA02AB4B0EC00714F5A /* VideoConferencingSwiftUIApp.swift in Sources */,
 				4B545D5B2AB9BFC50062663D /* CustomUIFactory.swift in Sources */,
 				4BBAD1FB2ABD8BF300AC97CC /* RevolvingHeartView.swift in Sources */,
