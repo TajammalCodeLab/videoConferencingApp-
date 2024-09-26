@@ -64,7 +64,6 @@ struct PreJoinScreen: View {
             Spacer()
             
             Button {
-                //VideoRendererSetup()
                 isJoined.toggle()
             } label: {
                 Capsule()
