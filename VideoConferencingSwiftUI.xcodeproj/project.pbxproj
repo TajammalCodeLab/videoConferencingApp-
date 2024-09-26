@@ -330,6 +330,7 @@
 		1FF6729A2CA5D43800D76B1E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = BroadcastScreenSharingHandler/BroadcastScreenSharingHandlerDebug.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 33K7URGK8L;
